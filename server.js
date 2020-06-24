@@ -3,6 +3,11 @@ const app = express();
 const data = require('./data');
 const PORT = 3000;
 
+app.get('/', (req, res) => {
+  res.send('hellobello');
+    // res.send(paginatedData(req.query.page));
+});
+
 app.get('/worksheets', (req, res) => {
     res.send(paginatedData(req.query.page));
 });
