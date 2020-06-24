@@ -1,13 +1,14 @@
 {
-  "name": "isl-test-backend",
+  "name": "worksheet-endpoint",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql": "^2.18.1"
-  },
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }

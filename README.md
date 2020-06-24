@@ -1,2 +1,0 @@
-# isl-nextjs-poc-backend
-
