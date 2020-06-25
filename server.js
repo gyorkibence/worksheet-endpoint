@@ -1,7 +1,10 @@
 const express = require('express');
+const CORS = require('cors');
 const app = express();
 const data = require('./data');
 const PORT = process.env.PORT || 5000;
+
+app.use(CORS());
 
 app.get('/', (req, res) => {
   res.send('hellobello!');
