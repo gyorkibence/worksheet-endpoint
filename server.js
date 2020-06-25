@@ -12,7 +12,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/worksheets', (req, res) => {
-    res.send(paginatedData(req.query.page));
+  res.send(paginatedData(req.query.page));
+});
+
+app.get('/worksheet/:id', (req, res) => {
+  if (req.params.id) {
+    const filteredData = data.data.filter((e) => +e.resourceId === +req.params.id);
+    res.send(filteredData);
+  }
 });
 
 const paginatedData = (pageNumber = 1) => (data.data.filter((e, i) => {
