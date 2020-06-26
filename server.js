@@ -23,7 +23,7 @@ app.get('/worksheet/:id', (req, res) => {
 });
 
 const paginatedData = (pageNumber = 1) => (data.data.filter((e, i) => {
-    return i >= (pageNumber - 1) * 10 && i < pageNumber * 10;
+    return i >= (pageNumber - 1) * 12 && i < pageNumber * 12;
   })
 );
 
